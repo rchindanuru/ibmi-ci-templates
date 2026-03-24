@@ -1,0 +1,20 @@
+name: IBM i Basic CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Placeholder build step
+        run: |
+          echo "This is a placeholder CI step for an IBM i project."
+          echo "Replace this with commands that build or test your code."
